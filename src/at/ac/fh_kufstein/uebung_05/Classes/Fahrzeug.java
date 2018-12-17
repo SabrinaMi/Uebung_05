@@ -43,35 +43,6 @@ public class Fahrzeug
             }
         }
     }
-
-    private boolean klimaanlage;
-    private short airbags;
-
-    void klimaanlageAn()
-    {
-        if (klimaanlage == false)
-        {
-            this.klimaanlage = true;
-        }
-        else
-        {
-            System.out.println("Klimaanlage läuft bereits");
-        }
-
-    }
-
-    void klimaanlageAus()
-    {
-        if (klimaanlage == true)
-        {
-            this.klimaanlage = false;
-        }
-        else
-        {
-            System.out.println("Klimaanlage ist ausgeschalten");
-        }
-    }
-
     public short getReifen()
     {
         return reifen;
@@ -140,66 +111,6 @@ public class Fahrzeug
     public static void setAnzahl(int anzahl)
     {
         Fahrzeug.anzahl = anzahl;
-    }
-
-    public boolean isKlimaanlage()
-    {
-        return klimaanlage;
-    }
-
-    public void setKlimaanlage(boolean klimaanlage)
-    {
-        this.klimaanlage = klimaanlage;
-    }
-
-    public short getAirbags()
-    {
-        return airbags;
-    }
-
-    public void setAirbags(short airbags)
-    {
-        this.airbags = airbags;
-    }
-
-    public double getTiefgang()
-    {
-        return tiefgang;
-    }
-
-    public void setTiefgang(double tiefgang)
-    {
-        this.tiefgang = tiefgang;
-    }
-
-    public short getSchrauben()
-    {
-        return schrauben;
-    }
-
-    public void setSchrauben(short schrauben)
-    {
-        this.schrauben = schrauben;
-    }
-
-    public double getLadung()
-    {
-        return ladung;
-    }
-
-    public void setLadung(double ladung)
-    {
-        this.ladung = ladung;
-    }
-
-    private double tiefgang;
-    private short schrauben;
-    private double ladung;
-
-    void entladen() throws InterruptedException
-    {
-        ladung = 0;
-        Thread.sleep(5000);
     }
 
 }
